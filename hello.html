@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 	<head>
 		<meta charset="utf-8">
 		<title>My WebPAge</title>
+
 		<style media="screen">
 			table{
 				color: blue;
 				text-align: center;
+				border: 1px solid black ;
+				border-collapse: collapse;
+				width: 50%;
 			}
+			th,td{
+				border: 1px solid black;
+				padding: 5px;
+				background-color: lightgray;
+			}
+
+			div{
+				background-color: #6697e8;
+				width : 200px;
+				height: 100px;
+				margin: 10px;
+				padding: 50px;
+				border: 5px dotted blue;
+			}
+			img{
+				display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+			}
+			#medio{
+				background-color: lightgray;
+				border: 5px solid black;
+			}
+			.negrita{
+				font-weight: bold;
+			}
+
 		</style>
+
+		<link rel="stylesheet" href="style.css">
+
 	</head>
+
 	<body>
+
 		<h1 style="color:#4286f4; text-align:center; ">Hello!</h1>
 
-		<img src="https://pbs.twimg.com/media/DdDGChbV0AASgJN.jpg:large" width="20%"><br/>
+		<p>Learning html</p>
+
+		<img src="https://pbs.twimg.com/media/DdDGChbV0AASgJN.jpg:large" width="10%" height="10%"><br/>
 
 		<h1>h1</h1>
 		<h2>h2</h2>
@@ -58,7 +97,13 @@
 			<button type="button" name="button">Enviar</button>
 		</form>
 
+		<div class="">
+			<span class="negrita">This a DIV!</span>
+		</div>
 
+		<div id="medio" class="">
+			This is the <span class="negrita">middle</span> part of my web!
+		</div>
 
 	</body>
 </html>
