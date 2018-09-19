@@ -1,0 +1,15 @@
+h2{
+  color: red;
+  text-align: center;
+}
+h3{
+  color: orange;
+  text-align: center;
+}
+p{
+  font-family: Arial,sans-serif;
+  font-size: 20px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
