@@ -19,14 +19,6 @@
 				background-color: lightgray;
 			}
 
-			div{
-				background-color: #6697e8;
-				width : 200px;
-				height: 100px;
-				margin: 10px;
-				padding: 50px;
-				border: 5px dotted blue;
-			}
 			img{
 				display: block;
 		    margin-left: auto;
@@ -39,7 +31,47 @@
 			.negrita{
 				font-weight: bold;
 			}
+			.div_estilo{
+				background-color: #6697e8;
+				width : 200px;
+				height: 100px;
+				margin: 10px;
+				padding: 50px;
+				border: 5px dotted blue;
+			}
 
+			<!-- CSS SELECTORS-->
+			ol li{
+				color: red;
+			}
+			ol > li {
+				color:blue;
+			}
+
+			input[type=text]{
+
+				background-color:  #4286f4;
+			}
+			input[type=number]{
+				background-color:  #f46b41;
+			}
+			button{
+				width: 200px;
+				height: 50px;
+				font-size: 24px;
+			}
+			button:hover{
+
+				background-color: #0a83c9;
+			}
+			a::before{
+				content: "\21d2 click here: ";
+			}
+
+			p::selection{
+				color: #cc496e;
+				background-color: #ede217;
+			}
 		</style>
 
 		<link rel="stylesheet" href="style.css">
@@ -70,6 +102,22 @@
 		<ol>
 			<li>ol</li>
 			<li>ol</li>
+			<ul>
+				<li>ul</li>
+				<li>ul</li>
+				<li>ul</li>
+			</ul>
+			<li>ol</li>
+		</ol>
+
+		<ol>
+			<li>ol</li>
+			<li>ol</li>
+			<ul>
+				<li>ul</li>
+				<li>ul</li>
+				<li>ul</li>
+			</ul>
 			<li>ol</li>
 		</ol>
 
@@ -92,18 +140,51 @@
 
 		</table>
 
+		<br>
+
 		<form class="" action="www.google.com.pe" method="post">
-			<input type="text" name="name" placeholder="escriba">
-			<button type="button" name="button">Enviar</button>
+			<div id= "div_profile" class="">
+				<input type="text" name="name" placeholder="name">
+				<input type="password" name="password" placeholder="password">
+				<input type="number" name="age" placeholder="age">
+				<button type="button" name="button">Enviar</button>
+			</div>
+
+			<div class="div_likes">
+				Favorite color? <br>
+				<input type="radio" name="color" value="red">red
+				<input type="radio" name="color" value="blue">blue
+				<input type="radio" name="color" value="green">green
+				<input type="radio" name="color" value="other">other
+			</div>
+
+			<div class="">
+				<input name="country" list="countries" placeholder="country">
+				<datalist id="countries">
+					<option value="Peru"></option>
+					<option value="Colombia"></option>
+					<option value="Argentina"></option>
+					<option value="Venezuela"></option>
+				</datalist>
+			</div>
 		</form>
 
-		<div class="">
+		<div class="div_estilo">
 			<span class="negrita">This a DIV!</span>
 		</div>
 
-		<div id="medio" class="">
+		<div id="medio" class="div_estilo">
 			This is the <span class="negrita">middle</span> 	part of my web!
 		</div>
+
+		<h2>table of contents</h2>
+		<ul>
+			<li><a href="#section1">section1</a> </li>
+			<li><a href="#section2">section2</a> </li>
+			<li><a href="#section3">section3</a> </li>
+		</ul>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 	</body>
 </html>
